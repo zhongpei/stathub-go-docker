@@ -1,3 +1,6 @@
 server:
     build: .
+    ports:
+       - "15944:15944"
     restart: always
+    command: /var/stathub/service start
