@@ -1,10 +1,9 @@
 server:
-    build: .
+    image: zhongpei/stathub-go
     ports:
        - "15944:15944"
     volumes:
        - ./config:/var/stathub/config
     restart: always
 
-#    command: /var/stathub/service start
     
