@@ -1,6 +1,6 @@
 server:
     image: zhongpei/stathub-go
-    env_file: .env
+#    env_file: .env
     ports:
       - "15944:15944"
     expose:
