@@ -1,7 +1,10 @@
 server:
     image: zhongpei/stathub-go
+    env_file: .env
     ports:
-       - "15944:15944"
+      - "15944:15944"
+    expose:
+       - "15944"
     volumes:
        - ./config:/var/stathub/config
     restart: always

@@ -8,4 +8,5 @@ RUN ./build.sh
 COPY ./stathub-go/setup_local.sh /opt/stathub/setup_local.sh
 RUN ./setup_local.sh
 WORKDIR /var/stathub
-CMD [ "./service", "start" ]
+EXPOSE 15944
+CMD ["./service","start" ]
